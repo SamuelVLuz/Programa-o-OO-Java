@@ -2,19 +2,18 @@ class fibo {
     public static void main(String[] args) {
         
         // Variáveis são inteiras, porque vou calcular com centímetros
-		int chico = 80;
-		int juca = 60;
-		int anos = 0;
+		int num = 1;
+		int mais = 0;
+		int ant = 0;
 		
-		do {
-			chico += 6;
-			juca += 9;
-			anos ++;
+		System.out.println(num);
+		for (int i = 1; i < 10; i++){
+			ant = num;
 			
-		} while (chico >= juca);
-		
-		System.out.printf("Vão ser necessários %d anos, para que Juca fique maior que Chico", anos);
-
-        
+			num += mais;
+			System.out.println(num);
+			mais = ant;
+				
+		}
     }
 }
