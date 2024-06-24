@@ -76,8 +76,8 @@ class Urna {
 	
 	
 	public static void main (String []args){
-		Urna teste = new Urna();/*
-		teste.iniciarVotacao();
+		Urna teste = new Urna();
+		teste.setStatus(1);
 		System.out.println(teste.getStatus());
 		teste.votar(51);
 		teste.votar(51);
@@ -85,8 +85,8 @@ class Urna {
 		teste.votar(-11);
 		teste.votar(57);
 		teste.votar(0);
-		teste.fecharVotacao();
+		teste.setStatus(0);
 		System.out.println(teste.getStatus());
-		teste.imprimirResultado();*/
+		teste.imprimirResultado();
 	}
 }
